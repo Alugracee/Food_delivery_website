@@ -1,0 +1,62 @@
+
+.navbar{
+    padding:10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo{
+    width: 150px;
+}
+.search, .cart{
+    width: 50px;
+    height: 50px;
+}
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+}
+.nav-right{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.navbar button{
+    background: transparent;
+    font-size: 16px;
+    border: 1px solid tomato;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #49557e;
+    cursor: pointer;
+}
+.navbar button:hover{
+    background-color: #fff44f;
+    color: white;
+    /* border: 1px solid tomato; */
+}
+.navbar-menu .active{
+    text-decoration: none;
+    color: #49557e;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #49557e;
+}
+.navbar-menu li{
+    cursor: pointer;
+}
+.navbar-search-icon{
+    position: relative;
+}
+.navbar-search-icon .dot{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: tomato;
+    border-radius: 50%;
+    top: -8px;
+    right: -8px;
+}
