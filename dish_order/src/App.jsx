@@ -7,16 +7,17 @@ import { Routes, Route } from 'react-router-dom'
 
 const App = () => {
   return (
-    <div className="app">
+    <>
+      <div className="app">
       <Navbar />
       <Routes>.jsx
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<cart />} />
         <Route path="/place-order" element={<placeOrder />} />
       </Routes>
-
-      
+      <footer/>
     </div>
+    </>
   )
 }
 
