@@ -6,7 +6,7 @@ const Navbar = () => {
     const [menu, setMenu] = useState("home");
   return (
     <div className="navbar">
-        <img src="https://i.pinimg.com/736x/0e/43/70/0e4370bd8efadf1dc9108e03c235d142.jpg" alt="logo" className="logo w-5" />
+        <img src="https://i.pinimg.com/736x/0e/43/70/0e4370bd8efadf1dc9108e03c235d142.jpg" alt="logo" className="logo" />
         {/* <img src="https://i.pinimg.com/736x/aa/89/42/aa89427a41223ba8954aad5923144c6e.jpg" alt="cart" className="cart" /> */}
         
         <ul className="navbar-menu">
@@ -16,7 +16,7 @@ const Navbar = () => {
             <li><a href="#" className={menu === "contact" ? "active" : ""} onClick={() => setMenu("contact")}>contact</a></li>
         </ul>
 
-        <div className="nav-right">
+        <div className="navbar-right">
             <img src="https://i.pinimg.com/736x/79/ce/10/79ce10e4c34077215b988139aec41dbe.jpg" alt="cart" className="search" />
 
             <div className="navbar-search-icon">
@@ -30,4 +30,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;

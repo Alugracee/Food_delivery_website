@@ -18,9 +18,9 @@
     gap: 20px;
     color: #49557e;
 }
-.nav-right{
+.navbar-right{
     display: flex;
-    gap: 40px;
+    gap: 20px;
     align-items: center;
 }
 .navbar button{
@@ -59,4 +59,57 @@
     border-radius: 50%;
     top: -8px;
     right: -8px;
+}
+@media(max-width: 1050px) {
+    .navbar .logo{
+        width: 150px;
+    }
+    .navbar-menu li{
+        font-size: 10px;
+    }
+    .navbar-menu{
+        gap: 20px;
+        font-size: 17px;
+    }
+    .navbar-right{
+        gap: 30px;
+    }
+    .navbar-right img{
+        width: 22px;
+    }
+    .navbar-right button{
+        padding: 4px 20px;
+        font-size: 15px;
+    }
+    .search, .cart{
+        width: 20px;
+        height: 20px;
+    }
+}
+@media (max-width: 900px){
+     .navbar .logo{
+        width: 80px;
+    }
+    .navbar-menu{
+        gap: 10px;
+        font-size: 15px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }
+    .navbar-right img{
+        width: 25px;
+        height: 25px;
+    }
+    .navbar-right button{
+        padding: 3px 15px;
+        font-size: 15px;
+
+    }
+}
+@media(max-width: 750px) { 
+    .navbar-menu{
+        display: none;
+    }
+    
 }

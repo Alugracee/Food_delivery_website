@@ -4,19 +4,21 @@ import Home from './pages/Home/home.jsx'
 import cart from './pages/Cart/cart.jsx'
 import placeOrder from './pages/placeOrder/placeOrder'
 import { Routes, Route } from 'react-router-dom'
+import Footer from './components/Footer/Footer.jsx'
 
 const App = () => {
   return (
     <>
       <div className="app">
       <Navbar />
-      <Routes>.jsx
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<cart />} />
         <Route path="/place-order" element={<placeOrder />} />
       </Routes>
-      <footer/>
     </div>
+    <Footer/>
+
     </>
   )
 }
