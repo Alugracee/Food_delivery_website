@@ -27,3 +27,16 @@ const FoodDisplay = ({category}) => {
 export default FoodDisplay;
 
 // (category)  means we can access all the children in the items directly with 
+
+// {food_list
+//           .filter(item => category === "All" || category === item.category)
+//           .map(item => (
+//             <FoodItem
+//               key={item._id}
+//               id={item._id}
+//               name={item.name}
+//               price={item.price}
+//               description={item.description}
+//               image={item.image}
+//             />
+//           ))}

@@ -9,6 +9,8 @@ const ContextStoreProvider = (props ) => {
     const [cartItems, setCartItems] = useState({}) // an empty list
 
     const addItemToCart = (itemId) =>{
+        
+        console.log(itemId)
         if (!cartItems[itemId]) {
             setCartItems((prev) => ({...prev,[itemId]:1}))
         }
@@ -48,3 +50,7 @@ const ContextStoreProvider = (props ) => {
     )
 }
 export default ContextStoreProvider;
+
+
+//FoodItem.jsx
+//
