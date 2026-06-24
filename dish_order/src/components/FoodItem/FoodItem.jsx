@@ -1,13 +1,9 @@
 import React, { useState, useContext } from 'react';
 import "./FoodItem.css" 
-import { StoreContext } from '../../contexts/storeContext';
+import { StoreContext } from '../../contexts/storeContext.jsx';
 
 const FoodItem = ({_id, name, price, description, image}) => {
-    console.log({
-  _id,
-  name
-})
-
+    // console.log("FoodItem props:", { _id, name});
     //   const [countItems, setCountItems] = useState(0)
     const {cartItems, setCartItems, addItemToCart, removeItemFromCart} = useContext(StoreContext )
     // console.log("image: ", image)

@@ -197,7 +197,7 @@ export const food_list = [
         category: "Dessert", 
     },
     {
-        _id: "15  ",
+        _id: "15",
         name: "lamingtons",
         image: "https://i.pinimg.com/736x/02/c9/b6/02c9b626213d6ef29484b9b5e3f6972f.jpg",
         price: 18,
